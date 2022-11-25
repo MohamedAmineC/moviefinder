@@ -1,6 +1,6 @@
 body {
     background-color: #7f0920;
-    color: #0a0408;
+    color: #ffffff;
 }
 
 #appTitle {
@@ -13,11 +13,13 @@ body {
 
 #genreForm, #playBtn {
     text-align: center;
-    margin: 0px auto;
+    margin: 30px auto 0px;
     display: block;
     font-family: 'Fredoka One', sans-serif;
 }
-
+#movie-Container{
+    font-family: 'Questrial';
+}
 #movieInfo {
     width:  65%;
     margin:  32px auto;
@@ -42,7 +44,6 @@ img#moviePoster {
 }
 
 #movieText {
-    font-family: 'Questrial';
     color: #FEFBEA;
     line-height: 1.25;
 }
@@ -52,16 +53,15 @@ img#moviePoster {
 }
 
 #playBtn {
-    margin-top: 20px;
-    font-size: 25px;
-    padding: 7px 10px;
-    border-radius: 10px;
-    border-style: none;
-    background-color: #B97828;
-    color: #fdc238;
+    width: 250px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #7F0920;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     cursor:  pointer;
 }
-
 label {
     display: block;
     font-size: 35px;
@@ -69,8 +69,16 @@ label {
 }
 
 select {
-    width: 200px;
+    width: 250px;
+    font-size: 24px;
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+    height: 150px;
+    border-radius: 5px;
     height: auto;
+    outline: none;
+    padding: 10px;
+    color: #7F0920;
 }
 #movieButton{
   width: 250px;
@@ -80,11 +88,15 @@ select {
   color:#7F0920;
   background-color:white;
   font-size: 20px;
-  font-family: 'sans-serif';
   text-decoration: none;
   padding: 20px;
   border-radius: 10px;
   
+}
+#movieHomePage:hover{
+    background-color: #7F0920;
+    color: white;
+    border: 1px solid white;
 }
 #likeOrDislikeBtns {
     text-align: center;
@@ -111,4 +123,42 @@ select {
 #dislikeBtn {
     background-color: #c74a4a;
     color: #910000;
+}
+@media screen and (max-width: 350px){
+    select{
+        font-size: 12px;
+    }
+    #playBtn{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 450px){
+    #appTitle{
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 600px){
+    #appTitle{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    select{
+        width: 50%;
+    }
+    #playBtn{
+        width: 50%;
+    }
+    #movieInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #moviePoster{
+        width: 100%;
+    }
+    #movieText{
+        width: 100%;
+    }
 }
