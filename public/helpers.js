@@ -80,6 +80,7 @@ const createMovieReleaseDate = (releaseDate) => {
 const createMovieHomepage = (homepage) => {
   const movieHomepage = document.createElement('a');
   movieHomepage.setAttribute('id','movieHomePage');
+  movieHomepage.setAttribute('class','select');
   movieHomepage.setAttribute('href',homepage);
   movieHomepage.setAttribute('target','__blank');
   movieHomepage.innerHTML = 'Watch Movie Here';
